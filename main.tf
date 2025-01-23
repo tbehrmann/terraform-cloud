@@ -1,4 +1,4 @@
-Provider configuration
+
 
 provider "gcp" {
   project = "terraform-cloud"
