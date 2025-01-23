@@ -1,6 +1,6 @@
-Provider configuration
 
-provider "gcp" {
+
+provider "google" {
   project = "terraform-cloud"
   region = "us-central1"
   zone    = "us-central1-c"
@@ -38,14 +38,4 @@ resource "google_compute_router" "testrouter1" {
   region = var.region
 }
  
-resource "google_compute_router" "testrouter1" {
-  name = "testrouter2"
-  network = google_compute_network.vpc_network.name
-  region = var.region
-}
-
-resource "google_compute_network" "vpc_network" {
-  name                    = "local"
-  auto_create_subnetworks = false
-}
 
