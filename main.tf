@@ -1,6 +1,6 @@
 
 
-provider "gcp" {
+provider "google" {
   project = "terraform-cloud"
   region = "us-central1"
   zone    = "us-central1-c"
