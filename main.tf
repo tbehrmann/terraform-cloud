@@ -1,7 +1,7 @@
 Provider configuration
 
 provider "gcp" {
-
+  project = "terraform-cloud"
   region = "us-east-1"
 
 }
