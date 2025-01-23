@@ -38,11 +38,6 @@ resource "google_compute_router" "testrouter1" {
   region = var.region
 }
  
-resource "google_compute_router" "testrouter1" {
-  name = "testrouter2"
-  network = google_compute_network.vpc_network.name
-  region = var.region
-}
 
 resource "google_compute_network" "vpc_network" {
   name                    = "local"
