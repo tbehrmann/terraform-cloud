@@ -1,3 +1,13 @@
+Provider configuration
+
+provider "gcp" {
+
+  region = "us-east-1"
+
+}
+
+
+
 resource "google_compute_network" "vpc_network" {
   name                    = "local"
   auto_create_subnetworks = false
